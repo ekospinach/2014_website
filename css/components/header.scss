@@ -25,14 +25,14 @@
 			#home {
 				float: left;
 				color: #FFF;
+				background-color: $blue;
 				border: 1px solid #FFF;
 				border-radius: 3px;
 				padding: 0.5em 1em;
 				display: block;
 			
 				&:hover {
-					background: #FFF;
-					color: $pink;
+					background-color: darken($blue,10%);
 				}
 			}
 		}

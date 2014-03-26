@@ -1,6 +1,6 @@
 $blue: #3FAEEC;
 $lightblue: #B3E0F8;
-$pink: #DA4A8F;
+$pink: #EB008B;
 $lightpink: #E594B9;
 
 @mixin clearfix {
@@ -110,3 +110,8 @@ $lightpink: #E594B9;
 	float: left;
 }
 
+
+
+.typeform-widget {
+	border: 1px solid $blue;
+}
