@@ -1,0 +1,21 @@
+#footer {
+	
+	padding: 2em 0;
+	font-size: 0.9em;
+	@include clearfix;
+
+	.thirds {
+		text-align: center;
+		padding: 0.5em 0 0;
+	}
+	
+	@media (min-width: 760px) {
+	
+		.thirds {
+			padding: 0;
+			width: 33%;
+			float: left;
+		}
+	}
+	
+}
