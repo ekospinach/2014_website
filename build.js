@@ -3,7 +3,7 @@ var fs = require('fs');
 var http = require('http');
 
 
-http.get('http://xoxapi.herokuapp.com/featured_posts/6/400',function(res) {
+http.get('http://xoxapi.herokuapp.com/featured_posts/3/400',function(res) {
 
 	var json = '';
 
