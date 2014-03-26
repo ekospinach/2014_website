@@ -99,25 +99,10 @@ artists, game developers, & kids of all ages.</h2>
 				
 				<h3><a href="http://notes.xoxco.com/" title="Read our blog"><img src="img/blog.png" alt="Read our Blog" border="0" /></a></h3>
 				<ul class="featured_posts">
-					
-						<li><a href="http://notes.xoxco.com/post/46962253250">Where do old posts go when they die?</a>
-						by Ben Brown</li>
-					
-						<li><a href="http://notes.xoxco.com/post/44067265810">Your Back Catalog</a>
-						by Ben Brown</li>
-					
-						<li><a href="http://notes.xoxco.com/post/41213044413">Publishers Should Publish, Not Chase Technological Trends</a>
-						by Adam Mathes</li>
-					
-						<li><a href="http://notes.xoxco.com/post/40790140616">Stop Making Websites</a>
-						by Ben Brown</li>
-					
-						<li><a href="http://notes.xoxco.com/post/36089202908">Reader Aware Design</a>
-						by Ben Brown</li>
-					
-						<li><a href="http://notes.xoxco.com/post/28288684632">More on password-less login</a>
-						by Ben Brown</li>
-					
+					{{#each featured_posts}}
+						<li><a href="{{link}}">{{title}}</a>
+						by {{author}}</li>
+					{{/each}}
 				</ul>
 			</li>			
 			<li>

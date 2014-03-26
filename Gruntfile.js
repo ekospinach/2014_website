@@ -36,9 +36,24 @@ module.exports = function(grunt) {
                 }
             }
         },
+        shell: {
+	      build_index: {
+			command: 'node build.js',
+			options: {
+				stdout: true
+			}      
+	      }  
+        },
 		watch: {
 		  options: {
 		        livereload: true,
+		    },
+		    templates: {
+			  files: ['*.hbs'],
+			  tasks: ['shell:build_index'],
+			  options: {
+				  spawn: false,
+			  }, 			    
 		    },
 		    scripts: {
 		        files: ['js/*.js'],
@@ -63,9 +78,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    
+    grunt.loadNpmTasks('grunt-shell');
+   
     
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat','uglify','sass','autoprefixer']);
+    grunt.registerTask('default', ['shell','concat','uglify','sass','autoprefixer']);
 
 };

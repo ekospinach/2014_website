@@ -41,6 +41,17 @@
 				text-align: center;
 			}	
 			
+			&.unpadded {
+				padding-left: 0;
+				padding-right: 0;
+				padding-bottom: 0;
+				
+				h3 {
+					padding-left: 2rem;
+					padding-right: 2rem;
+				}
+			}
+			
 			&:last-child {
 				border-bottom: 0;
 			}
@@ -56,7 +67,23 @@
 			clear: both;
 			content: ' ';
 		}
-		#project_list li li {
+		
+		#project_list li .featured_posts li {
+			
+			background: #F4F0F1;	
+			border: 0;
+			margin: 0 0 2px;
+			padding: 1rem 2rem;
+			
+			a { 
+				display: block;
+				text-transform: uppercase;
+				font-size: 1.25em;
+			}
+			
+		}
+		
+		#project_list li .github li {
 			float: left;
 			width: 50%;
 			padding: 1rem 0;
