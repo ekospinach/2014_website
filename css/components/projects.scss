@@ -1,77 +1,77 @@
 		#projects {
 			float: right;
-			
+
 /* 			text-align: center; */
-			
-			
+			width: 100%;
+
 		}
-				
+
 		@media (min-width: 1024px) {
-			#projects { 
+			#projects {
 				margin-left: 50%;
 				padding: 0px;
-				
+				width: 50%;
 			}
-			
-		}
-		
-		
-				
 
-		
+		}
+
+
+
+
+
 		#projects h1 {
-			font-size: 5rem; 
+			font-size: 5rem;
 			margin:0;
 		}
-		
 
-		#project_list { 
+
+		#project_list {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
 		}
-		
+
 		#project_list li {
 			margin-top: 3rem;
 			margin-bottom: 3rem;
 			padding:0 2rem 2rem 2rem ;
 			border-bottom: 1px solid #e4e4e4;
-		
+
 			&.centered {
 				text-align: center;
-			}	
-			
+			}
+
 			&.unpadded {
 				padding-left: 0;
 				padding-right: 0;
 				padding-bottom: 0;
-				
+
 				h3 {
 					padding-left: 2rem;
 					padding-right: 2rem;
 				}
 			}
-			
+
 			&.nobottom {
 				border-bottom: 0;
 				padding-bottom: 0;
 				margin-bottom: 0;
 			}
-			
+
 			&.hr {
 				padding: 0;
 				border: 0;
 			}
-			
+
 			&:first-child {
-				border-bottom: 0;				
+				border-bottom: 0;
 			}
-			
+
 			&:last-child {
 				border-bottom: 0;
 			}
 		}
-		
+
 		#project_list li ul {
 			list-style-type: none;
 			padding: 0;
@@ -82,22 +82,22 @@
 			clear: both;
 			content: ' ';
 		}
-		
+
 		#project_list li .featured_posts li {
-			
-			background: #F4F0F1;	
+
+			background: #F4F0F1;
 			border: 0;
 			margin: 0 0 2px;
 			padding: 1rem 2rem;
-			
-			a { 
+
+			a {
 				display: block;
 				text-transform: uppercase;
 				font-size: 1.25em;
 			}
-			
+
 		}
-		
+
 		#project_list li .github li {
 			@media (min-width: 480px) {
 				float: left;
@@ -109,8 +109,8 @@
 			font-size: 24px;
 			text-align: left;
 		}
-		
-		#project_list a { 
+
+		#project_list a {
 			text-decoration: none;
 		}
 
@@ -125,27 +125,25 @@
 
 		#project_list p {
 			padding: 1rem 0;
-			
+
 			text-align: left;
 			margin: 0px auto;
 			font-size: 1.2em;
 			line-height: 1.6em;
 			letter-spacing: .01em;
 		}
-			
-		
+
+
 		div.tagsinput { border:1px solid #CCC; background: #FFF; padding:1em; margin-bottom: 1em; width:300px; height:100px; overflow-y: auto;}
-		
+
 		div.tagsinput span.tag { border: 1px solid #a5d24a; -moz-border-radius:2px; -webkit-border-radius:2px; display: block; float: left; padding: 0.5em; text-decoration:none; background: #cde69c; color: #638421; margin-right: 0.5em; margin-bottom:0.5em;  font-size:1.5em;}
-		
-		div.tagsinput span.tag a { font-weight: bold; color: #82ad2b; text-decoration:none; font-size: 1em;  } 
-		
+
+		div.tagsinput span.tag a { font-weight: bold; color: #82ad2b; text-decoration:none; font-size: 1em;  }
+
 		div.tagsinput input { width:80px; margin:0px; font-family: helvetica;  border:1px solid transparent; padding:5px; background: transparent; color: #000; outline:0px;   padding: 0.5em;  margin-right: 0.5em; margin-bottom:0.5em; font-size:1.5em;}
-		
-		div.tagsinput div { display:block; float: left; } 
-		
+
+		div.tagsinput div { display:block; float: left; }
+
 		.tags_clear { clear: both; width: 100%; height: 0px; }
-		
-		.not_valid {background: #FBD8DB !important; color: #90111A !important;}		
-				
-	
+
+		.not_valid {background: #FBD8DB !important; color: #90111A !important;}

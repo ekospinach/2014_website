@@ -1,0 +1,12 @@
+<div ng-if="chunk.value" class="chunk overlay {{chunk.css_classes}}" ng-attr-id="{{chunk.css_id}}" style="background-image: url({{chunk.value|placeImageSrc}});  background-repeat: {{chunk.background_repeat}}; background-attachment: {{chunk.background_attachment}};">
+	<div class="overlay_text">
+		<div class="text {{chunk.width}} ng-class: {padded:chunk.padding!=false};" ng-bind-html="chunk.overlay_text|filters:chunk:page"></div>
+	</div>
+</div>
+<div ng-if="!chunk.value" class="chunk overlay {{chunk.css_classes}}" ng-attr-id="{{chunk.css_id}}" style="background-image: url('/api/placeholder/1200/900');">
+
+	<div class="overlay_text">
+		<div class="text {{chunk.width}} ng-class: {padded:chunk.padding!=false};" ng-bind-html="chunk.overlay_text|filters:chunk:page"></div>
+	</div>
+
+</div>
